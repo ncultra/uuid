@@ -24,12 +24,6 @@
 #include <linux/kernel.h>
 #include <linux/printk.h>
 #include <linux/uuid.h>
-#include <linux/moduleparam.h>
-
-#define assert(s) do {													\
-		if (unlikely(!(s))) printk(KERN_DEBUG "assertion failed: " #s " at %s:%d\n", \
-								   __FILE__, __LINE__);					\
-	} while(0)
 
 #define _MODULE_LICENSE "GPL v2"
 #define _MODULE_AUTHOR "Michael D. Day II <ncultra@gmail.com>"
