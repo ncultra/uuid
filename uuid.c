@@ -54,7 +54,7 @@ module_main(void)
 {
 	int ccode = 0;
 	uuid_t uuid = {0}, parsed_uuid = {0};
-	uint8_t uuid_string[UUID_STRING_LEN + 2] = {0};
+	uint8_t uuid_string[UUID_STRING_LEN + 1] = {0};
 
 	/* 1) create a random uuid */
 	generate_random_uuid(uuid.b);
